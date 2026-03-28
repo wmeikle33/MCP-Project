@@ -7,9 +7,9 @@ export function registerPrompts() {
     { capabilities: { tools: {}, resources: {}, prompts: {} } }
   );
 
-  registerTools(server);
-  registerResources(server);
-  registerPrompts(server);
+  register ask tool
+  register search tool
+  register summarize tool
 
   return prompt;
 }
