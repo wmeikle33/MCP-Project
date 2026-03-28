@@ -1,5 +1,4 @@
-import { registerTools } from "./registerTools";
-import { registerResources } from "./registerResources";
+import { resources } from "./resources";
 
 export function registerResources() {
   const resource = new Resource(
