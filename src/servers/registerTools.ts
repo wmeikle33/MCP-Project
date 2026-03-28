@@ -6,6 +6,9 @@ export function createTool() {
     { capabilities: { tools: {}, resources: {}, prompts: {} } }
   );
 
+  register ask tool
+  register search tool
+  register summarize tool
 
   return server;
 }
