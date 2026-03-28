@@ -22,7 +22,7 @@ dev = [
 ]
 
 [project.scripts]
-thesis-webscraper = "mcp_project.cli:main"
+mcp-project = "mcp_project.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
