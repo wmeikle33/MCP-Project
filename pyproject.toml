@@ -3,14 +3,12 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "thesis-webscraper"
+name = "mcp-project"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
   "typer>=0.12",
   "rich>=13",
-  "selenium>=4.15",
-  "beautifulsoup4>=4.12",
   "python-dotenv>=1.0",
 ]
 
@@ -24,7 +22,7 @@ dev = [
 ]
 
 [project.scripts]
-thesis-webscraper = "thesis_webscraper.cli:main"
+thesis-webscraper = "mcp_project.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
