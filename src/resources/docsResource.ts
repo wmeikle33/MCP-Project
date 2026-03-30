@@ -1,13 +1,24 @@
+export const docsResource = ({
+  text,
+  length = 'short',
+  format = 'bullets',
+}: SummarizeParams): string => {
+  return `
+    System Persona: Act as an expert content editor and summarizer.
+    Task: Summarize the input text below.
+    
+    Constraints:
+    - Length: ${length}
+    - Format: ${format}
+    - Focus: Identify the key arguments, decisions, and main takeaways.
+    - Style: Clear, concise, and professional.
+    - Tone: Informative, avoid unnecessary filler phrases.
 
-import { createServer } from "./server/createServer";
-import { startStdioTransport } from "./transports/stdio";
+    Input Text:
+    """
+    ${text}
+    """
 
-async function main() {
-  const server = createServer();
-  await startStdioTransport(server);
-}
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+    Summary:
+  `.trim();
+};
