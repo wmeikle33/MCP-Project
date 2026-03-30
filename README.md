@@ -64,7 +64,6 @@ my-mcp-server/
 │  │
 │  ├─ integrations/
 │  │  ├─ github/
-│  │  ├─ slack/
 │  │  ├─ postgres/
 │  │  └─ files/
 │  │
